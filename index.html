@@ -1,1 +1,73 @@
-Hello World Golden
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #eaeaea;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px 40px;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    p:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #00ffe0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>
+      I'm a programmer passionate about clean code, learning new tech, and building simple yet powerful tools.
+    </p>
+  </div>
+</body>
+</html>
